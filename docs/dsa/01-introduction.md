@@ -190,9 +190,10 @@ and GCC compiler can be downloaded from MinGW site.
 ##### For Windows:
 Note: In order to use the GCC compiler from command line interface in windows, we need to add the
 installation directory to path. To add the compiler to path follow the steps below:
+
 * Navigate to the Compiler Installation directory
 * Now navigate in bin directory inside compiler installation directory
-* Copy the complete path: C:\MinGW\bin\ or any other path
+* Copy the complete path: <kbd>C:\MinGW\bin\</kbd> or any other path
 * Hold the <kbd>Alt</kbd> button and double click on 'This Pc' from desktop
 * Now Select 'Advanced System Settings' from left sidebar
 * Search for Environment variables inside of 'Advanced' tab and click it.
@@ -201,6 +202,7 @@ installation directory to path. To add the compiler to path follow the steps bel
 
 ##### For Linux
 You can use apt or yum package manager
+
 ```sh
 sudo apt install build-essential
 sudo apt install gcc
@@ -227,6 +229,7 @@ So, about 90% of this book after introduction section will be practical.
 We are happy to get started on our journey with you.
 
 The content discussed in this book uses latest programming tools such as:
+
 * C11 version of c language
 * Text Editors used in real world app development.
 * Solutions using multiple approaches.
