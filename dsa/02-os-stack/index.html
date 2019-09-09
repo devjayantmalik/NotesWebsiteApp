@@ -542,6 +542,19 @@
     Intro to Stack:
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    Note:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -562,6 +575,19 @@
   <a href="#practical-demonstration-of-lifo" class="md-nav__link">
     Practical Demonstration of LIFO:
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note_1" class="md-nav__link">
+    Note:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -674,6 +700,19 @@
     Intro to Stack:
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    Note:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -694,6 +733,19 @@
   <a href="#practical-demonstration-of-lifo" class="md-nav__link">
     Practical Demonstration of LIFO:
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note_1" class="md-nav__link">
+    Note:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -768,13 +820,18 @@ float pi_times(int num){
 // main function
 int main(int argc, char const *argv[]) {
   // calculating the pi squared.
-  squared = pi_times(2);
+  int squared = pi_times(2);
   printf(&quot;PI Squared: %.14f\n&quot;, squared);
 
   return 0;
 }
 </code></pre>
 
+<h4 id="note">Note:</h4>
+<p>To visualize the above code working please visit <a href="http://pythontutor.com/c.html">pythontutor.com/c.html</a><br />
+  Paste the code and press visualize execution button.
+  After pressing visualize button you will see Forward button.
+  Click forward button and see the stack in action.</p>
 <p>Now, the Operating System needs to solve the functions. In order to solve the above program,</p>
 <p>The Operating System:
 * Allocates <em>RAM</em> for program
@@ -849,6 +906,8 @@ Memory | Index
 <p>Let's write a program that demonstrates, that:
 <strong>a function on returning some value is deleted from stack</strong>
 and a new function called after it will occupy its position.</p>
+<h4 id="note_1">Note:</h4>
+<p>Please Visit <a href="http://pythontutor.com/c.html">pythontutor.com/c.html</a> to visualize the <strong>STACK</strong> formed during execution of program.</p>
 <pre><code class="c">#include &lt;stdio.h&gt;
 
 int calculate_fib(int num){
