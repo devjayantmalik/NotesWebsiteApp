@@ -833,12 +833,14 @@ int main(int argc, char const *argv[]) {
   After pressing visualize button you will see Forward button.
   Click forward button and see the stack in action.</p>
 <p>Now, the Operating System needs to solve the functions. In order to solve the above program,</p>
-<p>The Operating System:
-* Allocates <em>RAM</em> for program
-* Loads the program in <em>RAM</em>
-* Solves <em>each</em> function one by one inside <strong>STACK</strong>
-* Free the memory allocated for each function, whenever the function returns some value.
-* Finally, free the memory reserved for whole program.</p>
+<p>The Operating System:</p>
+<ul>
+<li>Allocates <em>RAM</em> for program</li>
+<li>Loads the program in <em>RAM</em></li>
+<li>Solves <em>each</em> function one by one inside <strong>STACK</strong></li>
+<li>Free the memory allocated for each function, whenever the function returns some value.</li>
+<li>Finally, free the memory reserved for whole program.</li>
+</ul>
 <p>Let's understand different parts of RAM, allocated by OS.
 We have already discussed in introduction section, that each program on loading in <strong>RAM</strong>, loads in 4 different sections. They are:</p>
 <ul>
@@ -850,8 +852,10 @@ We have already discussed in introduction section, that each program on loading 
 <p>Now, in this lesson, we will study one of the memory section from above 4 sections, that is <strong>STACK</strong></p>
 <h2 id="working-of-stack">Working of Stack</h2>
 <p>Stack is a data structure, that holds some data. The data could be of any type, such as int, float, char, pointer, structure, union etc.</p>
-<p>The STACK follows some conditions, which differentiates it from other <strong>data structures</strong>, that is:
-* Item in <em>STACK</em> can be <strong>inserted</strong> and <strong>deleted</strong> from <strong>TOP</strong> of STACK.</p>
+<p>The STACK follows some conditions, which differentiates it from other <strong>data structures</strong>, that is:</p>
+<ul>
+<li>Item in <em>STACK</em> can be <strong>inserted</strong> and <strong>deleted</strong> from <strong>TOP</strong> of STACK.</li>
+</ul>
 <p>The above terminology <strong><em>"insertion and deletion from top"</em></strong> has given STACK a short form <strong>LIFO</strong> described as, <strong>LAST IN FIRST OUT</strong></p>
 <p><strong>LIFO</strong> simply means, the data item inserted at last will be evaluated first.</p>
 <h2 id="example-to-demonstrate-the-example">Example to Demonstrate the example:</h2>
@@ -899,9 +903,11 @@ Memory | Index
 </code></pre>
 
 <p>Note:
-  You will notice that,
-  * <strong>3 was deleted</strong> from stack and <strong>5 was inserted</strong> in the same position <strong>where 3 existed</strong> a while ago(before deletion).
-  * So, it makes sense that, if we print address of each of these numbers, <strong>then address of 3</strong> should be equal to <strong>address of 5</strong></p>
+  You will notice that,</p>
+<ul>
+<li><strong>3 was deleted</strong> from stack and <strong>5 was inserted</strong> in the same position <strong>where 3 existed</strong> a while ago(before deletion).</li>
+<li>So, it makes sense that, if we print address of each of these numbers, <strong>then address of 3</strong> should be equal to <strong>address of 5</strong></li>
+</ul>
 <h2 id="practical-demonstration-of-lifo">Practical Demonstration of LIFO:</h2>
 <p>Let's write a program that demonstrates, that:
 <strong>a function on returning some value is deleted from stack</strong>
@@ -941,22 +947,31 @@ Address: 1528622044 || Number: 1
 Fib 3: 3
 </code></pre>
 
-<p>You could have noticed that:
-* Line 3 and 4 have same address.
-* Line 2 and 5 have same address.</p>
-<p>To understand the above issue, draw the STACK with following rule:
-* Insert the item from top and delete from top.</p>
+<p>You could have noticed that:</p>
+<ul>
+<li>Line 3 and 4 have same address.</li>
+<li>Line 2 and 5 have same address.</li>
+</ul>
+<p>To understand the above issue, draw the STACK with following rule:</p>
+<ul>
+<li>Insert the item from top and delete from top.</li>
+</ul>
 <p>You will notice that result of <strong>fib(1)</strong> was deleted and then <strong>fib(0)</strong> was loaded in same memory address, so, the address were same.</p>
 <hr />
 <h2 id="implementation-of-stack">Implementation of STACK:</h2>
-<p>STACK can be implemented using 2 ways, i.e,
-* STATIC IMPLEMENTATION - ARRAY IMPLEMENTATION
-* DYNAMIC IMPLEMENTATION - LINKED LIST IMPLEMENTATION</p>
+<p>STACK can be implemented using 2 ways, i.e,</p>
+<ul>
+<li>STATIC IMPLEMENTATION - ARRAY IMPLEMENTATION</li>
+<li>DYNAMIC IMPLEMENTATION - LINKED LIST IMPLEMENTATION</li>
+</ul>
+<p>DYNAMIC IMPLEMENTATION WILL BE COVERED IN FUTURE.</p>
 <h3 id="static-implementation">STATIC Implementation:</h3>
 <p>Whenever actions of STACK are simulated using arrays, it is called static implementation.</p>
-<p>To implement the stack as array:
-* Create an array variable and restrict its insertion and deletion from one end.
-* To restrict the insertion and deletion, we need to create 2 functions, <strong>insert()</strong> and <strong>delete()</strong> and allow them to insert and delete item in our array.</p>
+<p>To implement the stack as array:</p>
+<ul>
+<li>Create an array variable and restrict its insertion and deletion from one end.</li>
+<li>To restrict the insertion and deletion, we need to create 2 functions, <strong>insert()</strong> and <strong>delete()</strong> and allow them to insert and delete item in our array.</li>
+</ul>
 <h3 id="algorithm-for-static-implementation">Algorithm for static implementation</h3>
 <p>Variables Explanation:</p>
 <pre><code>1. Here, int *stack is a pointer variable which holds the address of stack array initialized with null values.
