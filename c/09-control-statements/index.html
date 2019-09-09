@@ -1,0 +1,1148 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>09. Control Statements - Jayant's Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#control-statements" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Jayant's Academy" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Jayant's Academy
+            </span>
+            <span class="md-header-nav__topic">
+              
+                09. Control Statements
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Jayant's Academy" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Jayant's Academy
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../01-intro.md" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Programming in C
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Programming in C
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../01-intro/" title="01. Introduction" class="md-nav__link">
+      01. Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02-history-and-first-program/" title="02. History and First Program" class="md-nav__link">
+      02. History and First Program
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03-printing-on-screen/" title="03. Printing" class="md-nav__link">
+      03. Printing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04-variables/" title="04. Variables" class="md-nav__link">
+      04. Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05-more-on-variables/" title="05. More on Variables" class="md-nav__link">
+      05. More on Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06-operators/" title="06. Operators" class="md-nav__link">
+      06. Operators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07-more-on-operators/" title="07. More on Operators" class="md-nav__link">
+      07. More on Operators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../08-arrays/" title="08. Arrays" class="md-nav__link">
+      08. Arrays
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        09. Control Statements
+      </label>
+    
+    <a href="./" title="09. Control Statements" class="md-nav__link md-nav__link--active">
+      09. Control Statements
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#control-statements" class="md-nav__link">
+    Control Statements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-control-statements" class="md-nav__link">
+    Types of Control Statements :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selection-control-structures" class="md-nav__link">
+    Selection Control Structures :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-selection-control-structures" class="md-nav__link">
+    Types of Selection Control Structures :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-else-selection-control-structure" class="md-nav__link">
+    if else selection control structure :
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax-of-if" class="md-nav__link">
+    Syntax of if :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-if" class="md-nav__link">
+    Examples of if :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notable-points-about-ifelse-in-above-example" class="md-nav__link">
+    Notable Points about if...else in above example:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-expressions-with-if" class="md-nav__link">
+    Multiple Expressions with if :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-if" class="md-nav__link">
+    Nested if
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-case-control-structure" class="md-nav__link">
+    Switch Case Control Structure :
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explanation-of-each-part-in-switch-case" class="md-nav__link">
+    Explanation of each part in  switch case :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ternary-control-structure" class="md-nav__link">
+    Ternary Control Structure :
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../10-more-on-control-structures/" title="10. More on Control Statements" class="md-nav__link">
+      10. More on Control Statements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../11-functions/" title="11. Functions" class="md-nav__link">
+      11. Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../12-pointers/" title="12. Pointers" class="md-nav__link">
+      12. Pointers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../13-more-on-functions/" title="13. More on Functions" class="md-nav__link">
+      13. More on Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../14-preprocessor-directives/" title="14. Preprocessor Directives" class="md-nav__link">
+      14. Preprocessor Directives
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../15-more-on-preprocessor/" title="15. More on Preprocessor" class="md-nav__link">
+      15. More on Preprocessor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../16-built-in-functions/" title="16. Built in Functions" class="md-nav__link">
+      16. Built in Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../17-reference-guide/" title="17. Reference Guide" class="md-nav__link">
+      17. Reference Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../18-functions-with-pointers/" title="18. Functions with Pointers" class="md-nav__link">
+      18. Functions with Pointers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../19-built-in-char-functions/" title="19. Built in Char Functions" class="md-nav__link">
+      19. Built in Char Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../20-structures/" title="20. Structures" class="md-nav__link">
+      20. Structures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../21-file-handling/" title="21. File Handling" class="md-nav__link">
+      21. File Handling
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../22-interesting-facts/" title="22. Interesting Facts" class="md-nav__link">
+      22. Interesting Facts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Data Structures
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Data Structures
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsa/01-introduction/" title="01. Introduction" class="md-nav__link">
+      01. Introduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/01-intro/" title="01. Introduction" class="md-nav__link">
+      01. Introduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#control-statements" class="md-nav__link">
+    Control Statements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-control-statements" class="md-nav__link">
+    Types of Control Statements :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selection-control-structures" class="md-nav__link">
+    Selection Control Structures :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-selection-control-structures" class="md-nav__link">
+    Types of Selection Control Structures :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-else-selection-control-structure" class="md-nav__link">
+    if else selection control structure :
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax-of-if" class="md-nav__link">
+    Syntax of if :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-if" class="md-nav__link">
+    Examples of if :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notable-points-about-ifelse-in-above-example" class="md-nav__link">
+    Notable Points about if...else in above example:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-expressions-with-if" class="md-nav__link">
+    Multiple Expressions with if :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-if" class="md-nav__link">
+    Nested if
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-case-control-structure" class="md-nav__link">
+    Switch Case Control Structure :
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explanation-of-each-part-in-switch-case" class="md-nav__link">
+    Explanation of each part in  switch case :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ternary-control-structure" class="md-nav__link">
+    Ternary Control Structure :
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>09. Control Statements</h1>
+                
+                <h2 id="control-statements">Control Statements</h2>
+<p>The statements that are used to control flow of execution of program are called as control statements.</p>
+<h2 id="types-of-control-statements">Types of Control Statements :</h2>
+<ol>
+<li>Selection Control Structures</li>
+<li>Loop Control Structures</li>
+</ol>
+<h2 id="selection-control-structures">Selection Control Structures :</h2>
+<p>The control structures that allows us to execute actions based on a condition, provided by us, are called as selection control structures.</p>
+<p>Or, When the selected statements are executed based on some condition then selection control structures are used.</p>
+<h2 id="types-of-selection-control-structures">Types of Selection Control Structures :</h2>
+<ol>
+<li>if....else</li>
+<li>switch...case</li>
+<li>'?:' (terniary)</li>
+</ol>
+<h2 id="if-else-selection-control-structure">if else selection control structure :</h2>
+<p>if else control structure is used, when we need to execute some tasks, based on the expression, that results zero or non-zero value.</p>
+<h4 id="syntax-of-if">Syntax of if :</h4>
+<pre><code class="c">int main() {
+
+  // syntax :
+  if(expression_resulting_zero_or_non_zero){
+    // Note : Every non- zero number is treated as 1.
+    // multiple expressions are allowed, seperated with commas.
+  }
+
+  // usage :
+  if(0){
+    // statements inside body of if, will not execute.
+  }
+
+  // usage :
+  if(1){
+    // statements inside body of if, will execute.
+  }
+
+  return 0;
+}
+</code></pre>
+
+<h4 id="examples-of-if">Examples of if :</h4>
+<pre><code class="c">int main() {
+  int login_status = 0;
+
+  // only if.
+  if(login_status != 1){
+    printf(&quot;You are not allowed to access this system.\n&quot;);
+  }  
+
+  return 0;
+}
+</code></pre>
+
+<pre><code class="c">int main() {
+  int login_status = 0;
+
+  //if with else
+  if(login_status != 1){
+    printf(&quot;You are not allowed to access this system.\n&quot;);
+  }
+  else {
+    printf(&quot;Access granted..\n&quot;);
+  }
+
+  return 0;
+}
+</code></pre>
+
+<pre><code class="c">int main() {
+  int login_status = 0;
+
+  //if without else
+  if(login_status != 1){
+    printf(&quot;You are not allowed to access this system.\n&quot;);
+  }
+
+  if(login_status == 1)
+  {
+    printf(&quot;Access granted..\n&quot;);
+  }
+
+  return 0;
+}
+</code></pre>
+
+<pre><code class="c">int main() {
+  int login_status = 0;
+
+  //if with else
+  if(login_status == 0){
+    printf(&quot;You are not allowed to access this system.\n&quot;);
+  }
+  else if(login_status == 1){
+    printf(&quot;Access granted..\n&quot;);
+  }
+  else{
+    printf(&quot;We have secured our system, from this hack.\n&quot;);
+    printf(&quot;Your identity have been reported to security agency.\n&quot;);
+  }
+
+  return 0;
+}
+</code></pre>
+
+<h4 id="notable-points-about-ifelse-in-above-example">Notable Points about if...else in above example:</h4>
+<ol>
+<li>else is a reserved keyword that is optional to use with if.</li>
+<li>else is used to connect another if with previous if.</li>
+</ol>
+<h4 id="multiple-expressions-with-if">Multiple Expressions with if :</h4>
+<p>We could use multiple expressions with if :</p>
+<blockquote>
+<p>Body of if is always evaluated as per the last value.</p>
+</blockquote>
+<pre><code class="c">int main() {
+  if(0, 1, 0){
+    printf(&quot;I will not get printed.\n&quot;);
+  }
+
+  if(1, 0, 1){
+    printf(&quot;I will get printed.\n&quot;);
+  }
+
+  return 0;
+}
+</code></pre>
+
+<blockquote>
+<p>Expression is always evaluated from left to right because, rule of Associativity of comma is left to right.</p>
+</blockquote>
+<pre><code class="c">int main() {
+
+  if(printf(&quot;First\n&quot;), printf(&quot;Second\n&quot;), printf(&quot;Third\n&quot;)){
+    printf(&quot;Let's have a look in depth.\n&quot;);
+  }
+
+  return 0;
+}
+</code></pre>
+
+<h4 id="nested-if">Nested if</h4>
+<p>When if statements is used inside body of another if, it is called nested if.</p>
+<pre><code class="c">int main() {
+  if(1) {
+
+    if(1){ // this is nested if
+      printf(&quot;I am present inside body of if.\n&quot;);
+    }
+
+  }
+}
+</code></pre>
+
+<h2 id="switch-case-control-structure">Switch Case Control Structure :</h2>
+<p>switch case control structure is used, when we have possible combinations, prior to writing our c program.</p>
+<blockquote>
+<p>Example : Cities of students, studying in a school.</p>
+</blockquote>
+<p>Syntax :</p>
+<pre><code class="c">int main() {
+
+  switch(expression_with_some_value) {
+    case value : statements_to_execute; break;
+    case value : statements_to_execute; break;
+    default:
+      statements_to_execute
+  }
+
+  return 0;
+}
+</code></pre>
+
+<p>Example :</p>
+<pre><code class="c">int main() {
+
+  switch(1){
+    case 1: printf(&quot;Value is 1\n&quot;); break;
+    case 2: printf(&quot;Value is 2\n&quot;); break;
+    default :
+      printf(&quot;Value does not match any above case.\n&quot;);
+  }
+
+  return 0;
+}
+</code></pre>
+
+<h4 id="explanation-of-each-part-in-switch-case">Explanation of each part in  switch case :</h4>
+<pre><code class="c">int main() {
+  int x = 10;
+
+  switch(x){
+    case 1: printf(&quot;Hello&quot;);
+  }
+
+  // here x, is the value that will be used to match with every case.
+  // os tries to match value of x with 1 and if both of them are found to be same, then printf(&quot;Hello&quot;); will be executed.
+
+  return 0;
+}
+</code></pre>
+
+<pre><code class="c">int main() {
+    int roll_no = 2;
+
+    switch(roll_no){
+      case 2 : printf(&quot;Student Name: Arnav\n&quot;); break;
+      // In above case break keyword is used to exit execution of switch case.
+      // Means other cases after matching case will not be evaluated.
+    }
+
+  return 0;
+}
+</code></pre>
+
+<pre><code class="c">int main() {
+  int record_no = 10;
+
+  switch(record_no){
+    case 1: printf(&quot;Name: Rahul, Salary : 1000\n&quot;); break;
+    case 2: printf(&quot;Name: Amit, Salary : 1000\n&quot;); break;
+    case 3: printf(&quot;Name: Suraj, Salary : 1000\n&quot;); break;
+    default :
+      printf(&quot;Sorry, record not found.\n&quot;);
+  }
+
+  return 0;
+}
+</code></pre>
+
+<blockquote>
+<p>break is used to exit out of switch body.</p>
+<p>statements associated with default are executed only if, any of the above cases do not match.</p>
+</blockquote>
+<h2 id="ternary-control-structure">Ternary Control Structure :</h2>
+<p>Ternary control structure is used, in place of if..else, In fact, it is short form of if..else.
+It is ternary operator.</p>
+<pre><code class="c">int main() {
+  int marks = 10;
+
+  int interview_eligibility = (marks &gt; 60) ? 1 : 0;
+
+  if(interview_eligibility)
+    printf(&quot;Please visit administrator block at 6, for interview.\n&quot;);
+  else
+    printf(&quot;You are not eligible for interview.\n&quot;);
+
+  return 0;
+}
+</code></pre>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../08-arrays/" title="08. Arrays" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                08. Arrays
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../10-more-on-control-structures/" title="10. More on Control Statements" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                10. More on Control Statements
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

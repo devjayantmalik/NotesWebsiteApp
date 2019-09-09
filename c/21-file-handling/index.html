@@ -1,0 +1,2120 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>21. File Handling - Jayant's Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#file-handling-in-c" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Jayant's Academy" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Jayant's Academy
+            </span>
+            <span class="md-header-nav__topic">
+              
+                21. File Handling
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Jayant's Academy" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Jayant's Academy
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../01-intro.md" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Programming in C
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Programming in C
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../01-intro/" title="01. Introduction" class="md-nav__link">
+      01. Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02-history-and-first-program/" title="02. History and First Program" class="md-nav__link">
+      02. History and First Program
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03-printing-on-screen/" title="03. Printing" class="md-nav__link">
+      03. Printing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04-variables/" title="04. Variables" class="md-nav__link">
+      04. Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05-more-on-variables/" title="05. More on Variables" class="md-nav__link">
+      05. More on Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06-operators/" title="06. Operators" class="md-nav__link">
+      06. Operators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07-more-on-operators/" title="07. More on Operators" class="md-nav__link">
+      07. More on Operators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../08-arrays/" title="08. Arrays" class="md-nav__link">
+      08. Arrays
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../09-control-statements/" title="09. Control Statements" class="md-nav__link">
+      09. Control Statements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../10-more-on-control-structures/" title="10. More on Control Statements" class="md-nav__link">
+      10. More on Control Statements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../11-functions/" title="11. Functions" class="md-nav__link">
+      11. Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../12-pointers/" title="12. Pointers" class="md-nav__link">
+      12. Pointers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../13-more-on-functions/" title="13. More on Functions" class="md-nav__link">
+      13. More on Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../14-preprocessor-directives/" title="14. Preprocessor Directives" class="md-nav__link">
+      14. Preprocessor Directives
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../15-more-on-preprocessor/" title="15. More on Preprocessor" class="md-nav__link">
+      15. More on Preprocessor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../16-built-in-functions/" title="16. Built in Functions" class="md-nav__link">
+      16. Built in Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../17-reference-guide/" title="17. Reference Guide" class="md-nav__link">
+      17. Reference Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../18-functions-with-pointers/" title="18. Functions with Pointers" class="md-nav__link">
+      18. Functions with Pointers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../19-built-in-char-functions/" title="19. Built in Char Functions" class="md-nav__link">
+      19. Built in Char Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../20-structures/" title="20. Structures" class="md-nav__link">
+      20. Structures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        21. File Handling
+      </label>
+    
+    <a href="./" title="21. File Handling" class="md-nav__link md-nav__link--active">
+      21. File Handling
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#file-handling-in-c" class="md-nav__link">
+    File handling in C :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-operation" class="md-nav__link">
+    File Operation :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-file-handling" class="md-nav__link">
+    Why File handling ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-happens-during-program-execution" class="md-nav__link">
+    What happens during program execution?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-we-need-buffer" class="md-nav__link">
+    Why we need buffer ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-will-happen-if-program-interacts-direct-with-files-on-hdd" class="md-nav__link">
+    What will happen if Program interacts direct with files on HDD ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-file-handling" class="md-nav__link">
+    C File Handling :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions-for-file-handling" class="md-nav__link">
+    Functions for file handling :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-c-handles-file-details" class="md-nav__link">
+    How C handles file details :
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note-complete-file-content-cannot-be-loaded-to-buffer-at-once-because-buffer-size-allocated-to-application-is-limited" class="md-nav__link">
+    Note : Complete file content cannot be loaded to buffer at once, because BUFFER size allocated to application is limited.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fopen" class="md-nav__link">
+    fopen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-fopen" class="md-nav__link">
+    Example of fopen()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fclose" class="md-nav__link">
+    fclose()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-fclose" class="md-nav__link">
+    Example of fclose() :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fputc" class="md-nav__link">
+    fputc()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-fputc" class="md-nav__link">
+    Example of fputc()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fputs" class="md-nav__link">
+    fputs()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-fputs" class="md-nav__link">
+    Example of fputs()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#you-can-use-stdout-as-buffer-to-print-on-screen-using-fgets" class="md-nav__link">
+    You can use stdout as buffer to print on screen using fgets()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fgetc" class="md-nav__link">
+    fgetc()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-getc" class="md-nav__link">
+    Example of getc()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fgets" class="md-nav__link">
+    fgets()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feof" class="md-nav__link">
+    feof()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-feof" class="md-nav__link">
+    Examples of feof()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fprintf" class="md-nav__link">
+    fprintf()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-fprintf" class="md-nav__link">
+    Example of fprintf() :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples :
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#write-a-program-to-create-simple-implementation-of-cat-command-in-linux" class="md-nav__link">
+    Write a program to create simple implementation of cat command in linux.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write-a-program-to-create-simple-implementation-of-less-command-in-linux" class="md-nav__link">
+    Write a program to create simple implementation of less command in linux.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-data-with-dataype-info" class="md-nav__link">
+    Handling data with dataype info :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fwrite" class="md-nav__link">
+    fwrite()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-fwrite" class="md-nav__link">
+    Examples of fwrite() :
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-written-in-above-case-is-not-readable-by-any-text-editor" class="md-nav__link">
+    Data written in above case is not readable by any text editor.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fread" class="md-nav__link">
+    fread()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ftell" class="md-nav__link">
+    ftell()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-ftell" class="md-nav__link">
+    Examples of ftell()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fseek" class="md-nav__link">
+    fseek()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-fseek" class="md-nav__link">
+    Examples of fseek() :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-a-program-in-c-to-count-number-of-letters-in-a-file" class="md-nav__link">
+    Write a program in C to count number of letters in a file.
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../22-interesting-facts/" title="22. Interesting Facts" class="md-nav__link">
+      22. Interesting Facts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Data Structures
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Data Structures
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsa/01-introduction/" title="01. Introduction" class="md-nav__link">
+      01. Introduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/01-intro/" title="01. Introduction" class="md-nav__link">
+      01. Introduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#file-handling-in-c" class="md-nav__link">
+    File handling in C :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-operation" class="md-nav__link">
+    File Operation :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-file-handling" class="md-nav__link">
+    Why File handling ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-happens-during-program-execution" class="md-nav__link">
+    What happens during program execution?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-we-need-buffer" class="md-nav__link">
+    Why we need buffer ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-will-happen-if-program-interacts-direct-with-files-on-hdd" class="md-nav__link">
+    What will happen if Program interacts direct with files on HDD ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-file-handling" class="md-nav__link">
+    C File Handling :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions-for-file-handling" class="md-nav__link">
+    Functions for file handling :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-c-handles-file-details" class="md-nav__link">
+    How C handles file details :
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note-complete-file-content-cannot-be-loaded-to-buffer-at-once-because-buffer-size-allocated-to-application-is-limited" class="md-nav__link">
+    Note : Complete file content cannot be loaded to buffer at once, because BUFFER size allocated to application is limited.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fopen" class="md-nav__link">
+    fopen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-fopen" class="md-nav__link">
+    Example of fopen()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fclose" class="md-nav__link">
+    fclose()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-fclose" class="md-nav__link">
+    Example of fclose() :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fputc" class="md-nav__link">
+    fputc()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-fputc" class="md-nav__link">
+    Example of fputc()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fputs" class="md-nav__link">
+    fputs()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-fputs" class="md-nav__link">
+    Example of fputs()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#you-can-use-stdout-as-buffer-to-print-on-screen-using-fgets" class="md-nav__link">
+    You can use stdout as buffer to print on screen using fgets()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fgetc" class="md-nav__link">
+    fgetc()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-getc" class="md-nav__link">
+    Example of getc()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fgets" class="md-nav__link">
+    fgets()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feof" class="md-nav__link">
+    feof()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-feof" class="md-nav__link">
+    Examples of feof()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fprintf" class="md-nav__link">
+    fprintf()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-fprintf" class="md-nav__link">
+    Example of fprintf() :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples :
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#write-a-program-to-create-simple-implementation-of-cat-command-in-linux" class="md-nav__link">
+    Write a program to create simple implementation of cat command in linux.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write-a-program-to-create-simple-implementation-of-less-command-in-linux" class="md-nav__link">
+    Write a program to create simple implementation of less command in linux.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-data-with-dataype-info" class="md-nav__link">
+    Handling data with dataype info :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fwrite" class="md-nav__link">
+    fwrite()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-fwrite" class="md-nav__link">
+    Examples of fwrite() :
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-written-in-above-case-is-not-readable-by-any-text-editor" class="md-nav__link">
+    Data written in above case is not readable by any text editor.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fread" class="md-nav__link">
+    fread()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ftell" class="md-nav__link">
+    ftell()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-ftell" class="md-nav__link">
+    Examples of ftell()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fseek" class="md-nav__link">
+    fseek()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-fseek" class="md-nav__link">
+    Examples of fseek() :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-a-program-in-c-to-count-number-of-letters-in-a-file" class="md-nav__link">
+    Write a program in C to count number of letters in a file.
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>21. File Handling</h1>
+                
+                <h2 id="file-handling-in-c">File handling in C :</h2>
+<p>File handling is API of C used to interact with OS and buffer to read or write or work with files.</p>
+<h2 id="files">Files :</h2>
+<ul>
+<li>Collection of related info is called as file. or</li>
+<li>Collection of number of bytes when written on harddrive is called a file.</li>
+</ul>
+<h2 id="file-operation">File Operation :</h2>
+<p>We can execute four operations on any file :</p>
+<ol>
+<li>Open</li>
+<li>Read</li>
+<li>Write</li>
+<li>Close</li>
+</ol>
+<h2 id="why-file-handling">Why File handling ?</h2>
+<ol>
+<li>
+<p>Hard Disk Contains all your files.</p>
+</li>
+<li>
+<p>Files are managed by OS.</p>
+</li>
+<li>
+<p>But OS cannot change contents of a file itself.</p>
+</li>
+<li>
+<p>Some Program/Software is required to provide data to OS to write it to file.</p>
+</li>
+<li>
+<p>Examples : Notepad for text files, VLC for audio video files...etc...</p>
+</li>
+</ol>
+<h2 id="what-happens-during-program-execution">What happens during program execution?</h2>
+<ol>
+<li>
+<p>Program is Executed</p>
+</li>
+<li>
+<p>It gets some memory in RAM.</p>
+</li>
+<li>
+<p>Program creates BUFFER for file handling.</p>
+</li>
+<li>
+<p>Data is loaded in BUFFER</p>
+</li>
+<li>
+<p>Data is manipulated in BUFFER.</p>
+</li>
+<li>
+<p>OS flushes buffer and writes data to file.</p>
+</li>
+<li>
+<p>Program Terminates.</p>
+</li>
+</ol>
+<h2 id="why-we-need-buffer">Why we need buffer ?</h2>
+<p>Because speed of Hard Disk is slow than RAM.</p>
+<h2 id="what-will-happen-if-program-interacts-direct-with-files-on-hdd">What will happen if Program interacts direct with files on HDD ?</h2>
+<ol>
+<li>Program Loads in RAM and executes from RAM.</li>
+<li>RAM has much much faster speed than Hard Disk.</li>
+<li>File is present in Hard Disk.</li>
+</ol>
+<p>If program interacts with File present on Hard Disk or secondary storage, then Speed of Program execution will not match with file read or write.
+    Hence,</p>
+<pre><code>1. Program will require a large time to complete its execution.
+2. Will result in slow speed
+</code></pre>
+<h2 id="c-file-handling">C File Handling :</h2>
+<pre><code>Program  ----&gt; BUFFER ----&gt; File_on_hard_disk
+</code></pre>
+<h2 id="functions-for-file-handling">Functions for file handling :</h2>
+<table>
+<thead>
+<tr>
+<th>Function Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fputc()</td>
+<td>Writes single character in buffer</td>
+</tr>
+<tr>
+<td>fputs()</td>
+<td>Writes string to buffer</td>
+</tr>
+<tr>
+<td>fopen()</td>
+<td>Opens buffer as per mode ({'a'}append, {'r'}read, {'w'}write)</td>
+</tr>
+<tr>
+<td>fclose()</td>
+<td>Closes and flushes buffer</td>
+</tr>
+<tr>
+<td>fgetc()</td>
+<td>Reads single character from buffer</td>
+</tr>
+<tr>
+<td>fgets()</td>
+<td>Reads single string from buffer</td>
+</tr>
+<tr>
+<td>feof()</td>
+<td>Checks if end of file is reached.</td>
+</tr>
+<tr>
+<td>fprintf()</td>
+<td>Writes formatted data to buffer.</td>
+</tr>
+<tr>
+<td>fseek()</td>
+<td>Changes current reading/writing position in file buffer.</td>
+</tr>
+<tr>
+<td>ftell()</td>
+<td>Returns current reading/writing position in file buffer.</td>
+</tr>
+<tr>
+<td>fwrite()</td>
+<td>Writes structure data to file with datatype info in encrypted form</td>
+</tr>
+<tr>
+<td>fread()</td>
+<td>Reads data from file stored in form of structures</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-c-handles-file-details">How C handles file details :</h2>
+<ul>
+<li>To manage file details, C uses structure to store file info.</li>
+<li>FILE is structure name, declared in stdio.h</li>
+<li>fopen() returns pointer to FILE struct, this pointer is then later used for file manipulation.</li>
+</ul>
+<pre><code class="c">// sample code
+#include&lt;stdio.h&gt;
+int main(int argc, char const *argv[])
+{
+    FILE *document;
+
+    document = fopen(&quot;/home/jayant/testing.txt&quot;,&quot;r&quot;);
+    fclose();
+
+    return 0;
+}
+
+</code></pre>
+
+<h3 id="note-complete-file-content-cannot-be-loaded-to-buffer-at-once-because-buffer-size-allocated-to-application-is-limited">Note : Complete file content cannot be loaded to buffer at once, because BUFFER size allocated to application is limited.</h3>
+<h2 id="fopen">fopen</h2>
+<pre><code>1. It is a function of C.
+2. Used to create BUFFER in RAM.
+3. Loads content of file to buffer as per requirement.
+4. Returns NULL if unable to open.
+</code></pre>
+<p>Syntax :</p>
+<pre><code class="c">    int main(int argc, char const *argv[])
+    {
+        fopen(pointer_to_file_location, pointer_to_file_mode);
+        // Visual picture :
+        FILE * fopen(const char *loc, const char *mode);
+
+        file modes :
+        1. Read     ----&gt;allows read only operations
+        2. Write    ----&gt;allows overwrite operations
+        3. Append   ----&gt;allows appending operations (adds text after end of file)
+
+        return 0;
+    }
+
+</code></pre>
+
+<h2 id="example-of-fopen">Example of fopen()</h2>
+<pre><code class="c">#include&lt;stdio.h&gt;
+
+int main(int argc, char const *argv[])
+{
+    FILE *document;
+
+    document = fopen(&quot;/home/jayant/temp/file.c&quot;);
+    if(document == NULL)
+        return 0;
+    // some operation on file.
+
+    fclose(document);   //closes file buffer.
+    return 0;
+}
+</code></pre>
+
+<h2 id="fclose">fclose()</h2>
+<ol>
+<li>Function of C.</li>
+<li>Closes File stream or buffer.</li>
+<li>Flushes buffer.</li>
+<li>Informs OS to release memory allocated for file by program.</li>
+</ol>
+<p>Syntax :</p>
+<pre><code class="c">#include&lt;stdio.h&gt;
+    int main(int argc, char const *argv[])
+    {
+        // open buffer using fopen()
+
+        fclose(pointer_to_buffer);
+        //Visual appearence
+        fclose(const FILE *buffer);
+
+        return 0;
+    }
+</code></pre>
+
+<h2 id="example-of-fclose">Example of fclose() :</h2>
+<pre><code class="c">#include&lt;stdio.h&gt;
+
+int main(int argc, char const *argv[])
+{
+    FILE *document;
+
+    document = fopen(&quot;/home/jayant/temp/file.c&quot;,&quot;w&quot;);
+    if(document == NULL)
+        return 0;
+
+    // some action to ececute on file
+
+    fclose(document);
+
+    return 0;
+}
+</code></pre>
+
+<h2 id="fputc">fputc()</h2>
+<ol>
+<li>Writes a single character at an instance to BUFFER.</li>
+<li>Returns ascii value of charcter written.</li>
+</ol>
+<p>Synatx :</p>
+<pre><code class="c">    int main(int argc, char const *argv[])
+    {
+        int fputc(letter_to_write, pointer_to_buffer);
+        // Visual Appearence
+        extern int fputc (int __c, FILE *__stream);
+
+        return 0;
+    }
+
+</code></pre>
+
+<h2 id="example-of-fputc">Example of fputc()</h2>
+<pre><code class="c">#include&lt;stdio.h&gt;
+
+int main(int argc, char const *argv[])
+{
+    FILE *doc;
+
+    doc = fopen(&quot;/home/jayant/temp/file.c&quot;,&quot;a&quot;);
+    if(document == NULL)
+        return 0;
+
+    char result = fputs('A', doc);
+    printf(&quot;Returned : %c&quot;, result);
+
+    fclose(doc);
+    return 0;
+}
+</code></pre>
+
+<pre><code class="c">#include&lt;stdio.h&gt;
+
+int main(int argc, char const *argv[])
+{
+    FILE *doc;
+
+    doc = fopen(&quot;/home/jayant/temp/file.c&quot;,&quot;a&quot;);
+    if(document == NULL)
+        return 0;
+
+    for(char ch = 'A'; ch &lt;= 'Z'; ch++){
+        fputc(ch, doc);
+    }
+
+    fclose(doc);
+    return 0;
+}
+</code></pre>
+
+<h2 id="fputs">fputs()</h2>
+<ol>
+<li>writes a string to buffer.</li>
+<li>returns 1 on success and -1 on failure(when mode of file is read only).</li>
+</ol>
+<p>syntax :</p>
+<pre><code class="c">    extern int fputs (const char *__restrict __s, FILE *__restrict __stream);
+    // Visual look
+    fputs(pointer_to_string, pointer_to_buffer);
+
+</code></pre>
+
+<h2 id="example-of-fputs">Example of fputs()</h2>
+<pre><code class="c">#include&lt;stdio.h&gt;
+
+int main(int argc, char const *argv[])
+{
+    FILE *doc;
+
+    doc = fopen(&quot;/home/jayant/temp/file.c&quot;,&quot;w&quot;);
+    if(document == NULL)
+        return 0;
+
+    int result = fputs(&quot;Jayant&quot;, doc);
+    printf(&quot;%d\n&quot;,result);
+
+    fclose(doc);
+    return 0;
+}
+</code></pre>
+
+<h2 id="you-can-use-stdout-as-buffer-to-print-on-screen-using-fgets">You can use stdout as buffer to print on screen using fgets()</h2>
+<h2 id="fgetc">fgetc()</h2>
+<ol>
+<li>used to read character from buffer.</li>
+<li>Returns character fetched.</li>
+</ol>
+<p>Syntax :</p>
+<pre><code class="c">    extern int fgetc (FILE *__stream);
+    // Visual Appearence
+    fgetc(pointer_to_buffer);
+</code></pre>
+
+<h2 id="example-of-getc">Example of getc()</h2>
+<pre><code class="c">    #include&lt;stdio.h&gt;
+    int main(int argc, char const *argv[])
+    {
+        FILE *document;
+
+        document = fopen(&quot;/home/jayant/temp/file.c&quot;,&quot;r&quot;);
+        if(document == NULL)
+        return 0;
+
+        char result = fgetc(document);
+        printf(&quot;Result is %c\n&quot;,result);
+
+        fclose();
+        return 0;
+    }
+</code></pre>
+
+<pre><code class="c">    #include&lt;stdio.h&gt;
+
+    int main(int argc, char const *argv[])
+    {
+        FILE *document;
+
+        document = fopen(&quot;/home/jayant/temp/file.c&quot;,&quot;r&quot;);
+        if(document == NULL)
+        return 0;
+
+        //reads 10 charcater from file
+        for(int i = 0; i &lt; 11; i++){
+            printf(&quot;%c&quot;, fgetc(document));
+        }
+
+        return 0;
+    }
+</code></pre>
+
+<h2 id="fgets">fgets()</h2>
+<ol>
+<li>
+<p>Used to read string from BUFFER</p>
+</li>
+<li>
+<p>Reads till newline character '\n'</p>
+</li>
+<li>
+<p>Returns pointer to destination string variable which is manipulated to store result.(same as first argument of fgets)</p>
+</li>
+<li>
+<p>Always terminates itself even if length provided in function is less than no of words read.</p>
+</li>
+<li>
+<p>Writes newline character in string if any and always places null character at the end.</p>
+</li>
+</ol>
+<p>Syntax:</p>
+<pre><code class="c">    extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream);
+
+    //Visual Appearence
+    fgets(destination_string_to_write, length_of_string_to_read, pointer_to_buffer);
+
+</code></pre>
+
+<h2 id="feof">feof()</h2>
+<ul>
+<li>
+<p>Known as file end of file.</p>
+</li>
+<li>
+<p>Checks whether there is end of file reached in buffer.</p>
+</li>
+<li>
+<p>Returns 0 on completion is not reached and non zero on completion.</p>
+</li>
+</ul>
+<p>Syntax :</p>
+<pre><code class="c">    extern int feof (FILE *__stream) __THROW __wur;
+    //Visual Appereance
+    feof(pointer_to_buffer);
+
+</code></pre>
+
+<h2 id="examples-of-feof">Examples of feof()</h2>
+<pre><code class="c">    #include&lt;stdio.h&gt;
+    int main(int argc, char const *argv[])
+    {
+        FILE *document;
+        char *message;
+        document = fopen(&quot;/home/jayant/temp/file.c&quot;,&quot;r&quot;);
+
+        while(feof(document) == 0){ // !feof(document)
+            fgets(message, , document);
+        }
+        fclose(document);
+        return 0;
+    }
+</code></pre>
+
+<h2 id="fprintf">fprintf()</h2>
+<ul>
+<li>Function to write formatted output to file</li>
+<li>Provide pointer_to_buffer to printf() function and you get fprintf() function.</li>
+</ul>
+<p>Syntax :</p>
+<pre><code class="c">extern int fprintf (FILE *__restrict __stream,
+            const char *__restrict __format, ...);
+// Visual Appereance :
+    fprintf(pointer_to_buffer, same_as_printf_arguments);
+
+</code></pre>
+
+<h2 id="example-of-fprintf">Example of fprintf() :</h2>
+<pre><code class="c">    #include&lt;stdio.h&gt;
+    int main(int argc, char const *argv[])
+    {
+        FILE *doc;
+        int name[10] = &quot;Jayant Malik&quot;;
+
+        doc = fopen(&quot;/home/jayant/temp/file.c&quot;,&quot;a&quot;);
+        fprintf(doc, &quot;\nThis is a nice message for %s&quot;,name);
+
+        fclose();
+        return 0;
+    }
+</code></pre>
+
+<h2 id="examples">Examples :</h2>
+<h3 id="write-a-program-to-create-simple-implementation-of-cat-command-in-linux">Write a program to create simple implementation of cat command in linux.</h3>
+<pre><code class="c">    #include &lt;stdio.h&gt;
+
+int main(int argc, char const *argv[])
+{
+    FILE *document;
+    char message[100];
+
+    document = fopen(argv[1], &quot;r&quot;);
+
+    if(document == NULL){
+        printf(&quot;Error while processing request.\n&quot;);
+        return 0;
+    }
+
+    while(!feof(document)){
+        fgets(message, 95, document);
+        printf(&quot;%s&quot;,message);
+    }
+
+    printf(&quot;\n&quot;);
+    return 0;
+}
+</code></pre>
+
+<h3 id="write-a-program-to-create-simple-implementation-of-less-command-in-linux">Write a program to create simple implementation of less command in linux.</h3>
+<pre><code class="c">#include &lt;stdio.h&gt;
+
+int main(int argc, char const *argv[])
+{
+    FILE *document;
+    char message[100];
+
+    document = fopen(argv[1], &quot;r&quot;);
+
+    if(document == NULL){
+        printf(&quot;Error while processing request.\n&quot;);
+        return 0;
+    }
+
+    while(!feof(document)){
+        fgets(message, 95, document);
+        printf(&quot;%s&quot;,message);
+        getc(stdin);
+        printf(&quot;\033[1A&quot;);
+    }
+
+    printf(&quot;\n&quot;);
+    return 0;
+}
+</code></pre>
+
+<h2 id="handling-data-with-dataype-info">Handling data with dataype info :</h2>
+<p>C provides us fwrite() and fread() function to read and write data to file in binary form or encrypted form.</p>
+<h2 id="fwrite">fwrite()</h2>
+<ul>
+<li>
+<p>writes data stored in structure variable of program to file in encrypted form.</p>
+</li>
+<li>
+<p>preserves datatype info of data.</p>
+</li>
+<li>
+<p>do not store entire data in form of string.</p>
+</li>
+</ul>
+<p>Syntax :</p>
+<pre><code class="c">    extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+              size_t __n, FILE *__restrict __s);
+// Visual Appereance
+    fwrite(address_of_structure, number_of_bytes, units_of_structures, pointer_to_file);
+</code></pre>
+
+<ol>
+<li>
+<p>number_of_bytes can also be called as size_of_structure</p>
+</li>
+<li>
+<p>units_of_structure is used in case, when we have array of type structure demonstrated in example.</p>
+</li>
+</ol>
+<h2 id="examples-of-fwrite">Examples of fwrite() :</h2>
+<pre><code class="c">#include&lt;stdio.h&gt;
+
+    struct Employee{
+        char name[20];
+        int age;
+        double salary;
+    };          
+    typedef struct Employee Employee;
+
+    void getClientData(Employee *client){
+        printf(&quot;Enter employee name :\t&quot;);
+        scanf(&quot;%s&quot;,&amp;client-&gt;name);
+
+        printf(&quot;Enter employee age :\t&quot;);
+        scanf(&quot;%d&quot;,&amp;client-&gt;age);
+
+        printf(&quot;Enter employee salary :\t&quot;);
+        scanf(&quot;%lf&quot;,&amp;client-&gt;salary);
+    }
+
+    int main(int argc, char const *argv[])
+    {
+        FILE *document;
+
+        document = fopen(&quot;/home/jayant/temp/client_info.data&quot;,&quot;a&quot;);
+        if(document == NULL)
+        return 0;
+
+        Employee client;
+        getClientData(&amp;client);
+
+        fwrite( (char *)&amp;client, sizeof(Employee), 1, document);
+        // Note here 1 us passed as third argument because
+        //we have single unit of structure not array
+        // if we had an array then we would have passed number of elements
+        // as argument to fwrite()
+
+        fclose(document);
+
+        return 0;
+    }
+</code></pre>
+
+<h4 id="data-written-in-above-case-is-not-readable-by-any-text-editor">Data written in above case is not readable by any text editor.</h4>
+<pre><code class="c">    // program to accept data of n employees.
+#include&lt;stdio_ext.h&gt;
+#define NUMBER_OF_CLIENTS 10
+// could create seperate header file for this info.
+
+    struct Employee{
+        char name[20];
+        int age;
+        int salary;
+    };          
+    typedef struct Employee Employee;
+
+void getClientData(Employee *client){
+    printf(&quot;Enter employee name :\t&quot;);
+    scanf(&quot;%s&quot;,&amp;client-&gt;name);
+    __fpurge(stdin);
+
+    printf(&quot;Enter employee age :\t&quot;);
+    scanf(&quot;%d&quot;,&amp;client-&gt;age);
+    __fpurge(stdin);
+
+    printf(&quot;Enter employee salary :\t&quot;);
+    scanf(&quot;%d&quot;,&amp;client-&gt;salary);
+    __fpurge(stdin);
+}
+
+int main(int argc, char const *argv[])
+{
+    FILE *document;
+    Employee client[NUMBER_OF_CLIENTS] = {&quot;&quot;, 0, 0};
+    int index = 0;
+
+    document = fopen(&quot;/home/jayant/temp/client_info.txt&quot;,&quot;a&quot;);
+    if(document == NULL)
+        return 0;
+
+    while(1){
+        printf(&quot;Enter y to add record and q to quit..\t&quot;);
+        char ch = getchar();
+
+        if(ch == 'q')
+            break;
+
+        getClientData(&amp;client[index]);
+        index++;
+    }
+
+    fwrite((char *)&amp;client, sizeof(Employee), NUMBER_OF_CLIENTS, document);
+    // here NUMBER_OF_CLIENTS are passed as input to function
+    // because client structure contains NUMBER_OF_CLIENTS units.
+
+    printf(&quot;Record added successfully...&quot;);
+
+    fclose(document);
+    return 0;
+}
+</code></pre>
+
+<h2 id="fread">fread()</h2>
+<ol>
+<li>Used to read data from file.</li>
+<li>Reads encrypted data with data type information.</li>
+</ol>
+<p>Syntax :</p>
+<pre><code class="c">#include&lt;stdio_ext.h&gt;
+#define NUMBER_OF_CLIENTS 10
+// could create seperate header file for this info.
+
+    struct Employee{
+        char name[20];
+        int age;
+        int salary;
+    };          
+    typedef struct Employee Employee;
+
+void getClientData(Employee *client){
+    printf(&quot;Enter employee name :\t&quot;);
+    scanf(&quot;%s&quot;,&amp;client-&gt;name);
+    __fpurge(stdin);
+
+    printf(&quot;Enter employee age :\t&quot;);
+    scanf(&quot;%d&quot;,&amp;client-&gt;age);
+    __fpurge(stdin);
+
+    printf(&quot;Enter employee salary :\t&quot;);
+    scanf(&quot;%d&quot;,&amp;client-&gt;salary);
+    __fpurge(stdin);
+}
+
+int main(int argc, char const *argv[])
+{
+    FILE *document;
+    Employee client[NUMBER_OF_CLIENTS] = {&quot;&quot;, 0, 0};
+    int index = 0;
+
+    document = fopen(&quot;/home/jayant/temp/client_info.txt&quot;,&quot;r&quot;);
+    if(document == NULL)
+        return 0;
+
+    while(1){
+        printf(&quot;Enter y to add record and q to quit..\t&quot;);
+        char ch = getchar();
+
+        if(ch == 'q')
+            break;
+
+        getClientData(&amp;client[index]);
+        index++;
+    }
+
+    fread((char *)&amp;client, sizeof(Employee), NUMBER_OF_CLIENTS, document);
+
+    for(int i = 0; i &lt; NUMBER_OF_CLIENTS; i++){
+        printf(&quot;Name : %s\nAge : %d\nSalary : %d\n&quot;,client[i].name, client[i].age, client[i].salary);
+        printf(&quot;============================\n&quot;);
+    }
+
+    fclose(document);
+    return 0;
+}
+
+</code></pre>
+
+<h2 id="ftell">ftell()</h2>
+<ol>
+<li>Returns current read write position in file buffer.</li>
+<li>After creation of buffer position is 0.</li>
+<li>File always ends with a character EOF or End Of File.</li>
+</ol>
+<p>Syntax :</p>
+<pre><code class="c">extern long int ftell (FILE *__stream) __wur;
+// Visual Appearence :
+ftell(pointer_to_file);
+</code></pre>
+
+<h2 id="examples-of-ftell">Examples of ftell()</h2>
+<pre><code class="c">
+#include&lt;stdio.h&gt;
+
+int main(int argc, char const *argv[])
+{
+    FILE *document;
+    document = fopen(&quot;/home/jayant/temp/file.c&quot;, &quot;r&quot;);
+
+    if(document == NULL)
+        return 0;
+
+    int position = ftell(document);
+    printf(&quot;Position at start is %d\n&quot;, position);
+
+    fgetc(document); // reads first character at 0 and changes position to 1.
+
+    position = ftell(document);
+    printf(&quot;Position after fgetc %d\n&quot;, position);
+
+    fclose(document);
+    return 0;
+}
+</code></pre>
+
+<h2 id="fseek">fseek()</h2>
+<ol>
+<li>
+<p>Used to change current read write position in file buffer.</p>
+</li>
+<li>
+<p>Supports three mode : beginning position, current position, end position.</p>
+</li>
+<li>
+<p>beginning --&gt; 0, current --&gt; 1, end --&gt; 2</p>
+</li>
+</ol>
+<p>Syntax:</p>
+<pre><code class="c">extern int fseek (FILE *__stream, long int __off, int __whence);
+// Visual Apperence :
+fseek(pointer_to_file, number_of_bytes, position_to_start_from);
+</code></pre>
+
+<h2 id="examples-of-fseek">Examples of fseek() :</h2>
+<pre><code class="c">
+#include&lt;stdio.h&gt;
+
+int main(int argc, char const *argv[])
+{
+    FILE *document;
+    document = fopen(&quot;/home/jayant/temp/file.c&quot;, &quot;r&quot;);
+
+    if(document == NULL)
+        return 0;
+
+    int position = ftell(document);
+    printf(&quot;Position at start is %d\n&quot;, position);
+
+    fseek(document, 10, 0); // from beginning
+
+    position = ftell(document);
+    printf(&quot;Position after fgetc %d\n&quot;, position);
+
+    fclose(document);
+    return 0;
+}
+</code></pre>
+
+<pre><code class="c">
+#include&lt;stdio.h&gt;
+
+int main(int argc, char const *argv[])
+{
+    FILE *document;
+    document = fopen(&quot;/home/jayant/temp/file.c&quot;, &quot;r&quot;);
+
+    if(document == NULL)
+        return 0;
+
+    int position = ftell(document);
+    printf(&quot;Position at start is %d\n&quot;, position);
+
+    fseek(document, -3, 1); // from ending
+
+    position = ftell(document);
+    printf(&quot;Position after fgetc %d\n&quot;, position);
+
+    fclose(document);
+    return 0;
+}
+
+</code></pre>
+
+<h2 id="write-a-program-in-c-to-count-number-of-letters-in-a-file">Write a program in C to count number of letters in a file.</h2>
+<pre><code class="c">#include&lt;stdio.h&gt;
+
+int main(int argc, char const *argv[])
+{
+    FILE *src;
+    src = fopen(&quot;/home/jayant/temp/file.c&quot;, &quot;r&quot;);
+
+    if(src == NULL)
+        return 0;
+
+    fseek(src, 0, 2);
+    int letters_count = ftell(src);
+
+    printf(&quot;Total letters in file are : %d\n&quot;,letters_count);
+    fclose(src);
+    return 0;
+}
+
+</code></pre>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../20-structures/" title="20. Structures" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                20. Structures
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../22-interesting-facts/" title="22. Interesting Facts" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                22. Interesting Facts
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
