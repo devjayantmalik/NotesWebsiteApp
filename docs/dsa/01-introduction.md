@@ -66,7 +66,7 @@ The **memory addresses** provided to the **application** are **not physical** ra
 
 Hence, due to **virtual addresses** provided to application, the **memory** is often referred as ***Application Virtual Memory***
 
-![Virtual Memory](images/virtual-memory.png)
+![Virtual Memory](images/app-virtual-memory.jpg)
 
 The above figure represents 4 parts of application memory. Each part has its own use and importance. We will provide short description of each part.
 ### Text:
@@ -203,6 +203,7 @@ installation directory to path. To add the compiler to path follow the steps bel
 You can use apt or yum package manager
 ```sh
 sudo apt install build-essential
+sudo apt install gcc
 ```
 
 If you are confused in setting up your text editor and Compiler, then follow Option 2

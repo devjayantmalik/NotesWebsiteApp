@@ -18,12 +18,18 @@ float pi_times(int num){
 // main function
 int main(int argc, char const *argv[]) {
   // calculating the pi squared.
-  squared = pi_times(2);
+  int squared = pi_times(2);
   printf("PI Squared: %.14f\n", squared);
 
   return 0;
 }
 ```
+
+#### Note:
+  To visualize the above code working please visit [pythontutor.com/c.html](http://pythontutor.com/c.html)  
+  Paste the code and press visualize execution button.
+  After pressing visualize button you will see Forward button.
+  Click forward button and see the stack in action.
 
 Now, the Operating System needs to solve the functions. In order to solve the above program,
 
@@ -110,6 +116,9 @@ Note:
 Let's write a program that demonstrates, that:
 **a function on returning some value is deleted from stack**
 and a new function called after it will occupy its position.
+
+#### Note:
+  Please Visit [pythontutor.com/c.html](http://pythontutor.com/c.html) to visualize the **STACK** formed during execution of program.
 
 ```c
 #include <stdio.h>
