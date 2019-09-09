@@ -10,6 +10,7 @@ Usually data is stored in a file on PC **HDD** (hard disk drive), or **SSD** (so
 The **Structure** used to store data on **HDD** or **SSD** is called **Data Structure**
 
 Most common used **Data Structure** for storing data in **RAM** are:
+
 * **ARRAYS**
 * **STACK**
 * **QUEUE**
@@ -21,6 +22,7 @@ Most common used **Data Structure** for storing data in **RAM** are:
 A **procedure** or steps followed **to solve** any **computational problem** is called **algorithm**.
 
 An algorithm can be:
+
 * Written in **human understandable** language, such as **English**, **Hindi**, and so on...
 * Written in **programming** language, such as **C**, **C++**, **Java**, **Python**, and so on...
 
@@ -49,7 +51,14 @@ These 0s and 1s are loaded in **RAM**, and thereafter are transferred to **proce
 The **processor** calculates the result and stores it back in **RAM**.
 The process above is controlled by **Operating System**.
 
-## figure(showing os virtual memory and application memory)
+#### OS Virtual Memory
+![Os Memory](images/virtual-memory.jpg)
+
+#### Process Inside RAM
+![ram process](images/process-inside-ram.png)
+
+#### Application Virtual Memory
+![application memory](images/app-virtual-memory.jpg)
 
 ## Application Virtual Memory
 A part of memory from **RAM** is allocated to the application.
@@ -57,7 +66,7 @@ The **memory addresses** provided to the **application** are **not physical** ra
 
 Hence, due to **virtual addresses** provided to application, the **memory** is often referred as ***Application Virtual Memory***
 
-# (figure of virtual memory)
+![Virtual Memory](images/virtual-memory.png)
 
 The above figure represents 4 parts of application memory. Each part has its own use and importance. We will provide short description of each part.
 ### Text:

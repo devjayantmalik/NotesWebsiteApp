@@ -2,7 +2,7 @@ site_name: Jayant's Academy
 
 nav:
   - Home: index.md
-  - About: 01-intro.md
+  - About: about.md
   - 'Programming in C':
       - '01. Introduction': 'c/01-intro.md'
       - '02. History and First Program': 'c/02-history-and-first-program.md'
@@ -28,7 +28,9 @@ nav:
       - '22. Interesting Facts': 'c/22-interesting-facts.md'
   - 'Data Structures':
         - '01. Introduction': 'dsa/01-introduction.md'
+        - '02. OS Stack': 'dsa/02-os-stack.md'
   - 'Python':
       - '01. Introduction': 'python/01-intro.md'
+
 theme:
   name: 'material'
