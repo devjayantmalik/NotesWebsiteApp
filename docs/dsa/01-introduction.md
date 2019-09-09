@@ -69,6 +69,7 @@ Hence, due to **virtual addresses** provided to application, the **memory** is o
 ![Virtual Memory](images/app-virtual-memory.jpg)
 
 The above figure represents 4 parts of application memory. Each part has its own use and importance. We will provide short description of each part.
+
 ### Text:
 The text area holds the application 0s and 1s.
 
@@ -77,6 +78,7 @@ Usually these 0s and 1s are stored on **HDD** in form of **executable** file.
 The format of storing the executable varies as per the OS.
 
 Example:
+
 * Windows : .exe, .msi
 * Linux: No Extension needed
 * Mac: .app
@@ -85,6 +87,7 @@ Example:
 This portion of memory is stores environment variables for our program.
 
 Environment variables are used to store information such as:
+
 * **path to executables** for our application
 * **path to libraries** for our application
 
@@ -98,8 +101,8 @@ Heap is mainly used during the **Dynamic Memory Allocation**.
 ***Dynamic Memory Allocation*** is a process of **allocating memory** to program during **runtime**. It allows us to change the memory size of some variable.
 
 In case of Dynamic memory allocation we can:
-* Allocate custom memory to application (let's say 100 bytes)
 
+* Allocate custom memory to application (let's say 100 bytes)
 * Now in future we needed more memory. So, we can ask Operating System to allocate more memory to our previous created variable.
 
 ### Stack

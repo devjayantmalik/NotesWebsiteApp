@@ -34,6 +34,7 @@ int main(int argc, char const *argv[]) {
 Now, the Operating System needs to solve the functions. In order to solve the above program,
 
 The Operating System:
+
 * Allocates *RAM* for program
 * Loads the program in *RAM*
 * Solves *each* function one by one inside **STACK**
@@ -54,6 +55,7 @@ Now, in this lesson, we will study one of the memory section from above 4 sectio
 Stack is a data structure, that holds some data. The data could be of any type, such as int, float, char, pointer, structure, union etc.
 
 The STACK follows some conditions, which differentiates it from other **data structures**, that is:
+
 * Item in *STACK* can be **inserted** and **deleted** from **TOP** of STACK.
 
 The above terminology ***"insertion and deletion from top"*** has given STACK a short form **LIFO** described as, **LAST IN FIRST OUT**
@@ -107,6 +109,7 @@ Memory | Index
 
 Note:
   You will notice that,
+
   * **3 was deleted** from stack and **5 was inserted** in the same position **where 3 existed** a while ago(before deletion).
   * So, it makes sense that, if we print address of each of these numbers, **then address of 3** should be equal to **address of 5**
 
@@ -156,10 +159,12 @@ Fib 3: 3
 ```
 
 You could have noticed that:
+
 * Line 3 and 4 have same address.
 * Line 2 and 5 have same address.
 
 To understand the above issue, draw the STACK with following rule:
+
 * Insert the item from top and delete from top.
 
 You will notice that result of **fib(1)** was deleted and then **fib(0)** was loaded in same memory address, so, the address were same.
@@ -168,13 +173,17 @@ You will notice that result of **fib(1)** was deleted and then **fib(0)** was lo
 
 ## Implementation of STACK:
 STACK can be implemented using 2 ways, i.e,
+
 * STATIC IMPLEMENTATION - ARRAY IMPLEMENTATION
 * DYNAMIC IMPLEMENTATION - LINKED LIST IMPLEMENTATION
+
+DYNAMIC IMPLEMENTATION WILL BE COVERED IN FUTURE.
 
 ### STATIC Implementation:
 Whenever actions of STACK are simulated using arrays, it is called static implementation.
 
 To implement the stack as array:
+
 * Create an array variable and restrict its insertion and deletion from one end.
 * To restrict the insertion and deletion, we need to create 2 functions, **insert()** and **delete()** and allow them to insert and delete item in our array.
 
