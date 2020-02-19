@@ -683,6 +683,41 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#write-a-program-to-swap-two-numbers" class="md-nav__link">
+    Write a program to swap two numbers.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-a-program-to-calculate-area-and-perimeter-of-a-rectangle" class="md-nav__link">
+    Write a program to calculate area and perimeter of a rectangle.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-a-program-to-calculate-total-and-average-of-n-numbers" class="md-nav__link">
+    Write a program to calculate total and average of n numbers.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-a-program-to-check-whether-a-number-is-positive-or-negative" class="md-nav__link">
+    Write a program to check whether a number is positive or negative
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-a-program-to-swap-two-variables-without-using-third-variable" class="md-nav__link">
+    Write a program to swap two variables without using third variable
+  </a>
+  
+</li>
+      
       
       
       
@@ -691,6 +726,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lesson-02/" title="02. Conditionals, Arrays, Vectors, Strings, Loops" class="md-nav__link">
+      02. Conditionals, Arrays, Vectors, Strings, Loops
+    </a>
   </li>
 
         
@@ -785,6 +832,41 @@
         <li class="md-nav__item">
   <a href="#write-a-program-to-convert-miles-to-kms" class="md-nav__link">
     Write a program to convert miles to kms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-a-program-to-swap-two-numbers" class="md-nav__link">
+    Write a program to swap two numbers.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-a-program-to-calculate-area-and-perimeter-of-a-rectangle" class="md-nav__link">
+    Write a program to calculate area and perimeter of a rectangle.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-a-program-to-calculate-total-and-average-of-n-numbers" class="md-nav__link">
+    Write a program to calculate total and average of n numbers.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-a-program-to-check-whether-a-number-is-positive-or-negative" class="md-nav__link">
+    Write a program to check whether a number is positive or negative
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-a-program-to-swap-two-variables-without-using-third-variable" class="md-nav__link">
+    Write a program to swap two variables without using third variable
   </a>
   
 </li>
@@ -1048,6 +1130,137 @@ int main(int argc, const char **argv){
     return 0;
 }
 </code></pre>
+
+<h2 id="write-a-program-to-swap-two-numbers">Write a program to swap two numbers.</h2>
+<pre><code class="cpp">#include &lt;iostream&gt;
+
+int main(int argc, const char ** argv){
+    // store two numbers
+    int num1 = 10;
+    int num2 = 20;
+
+    // swap the number
+    int temp = num1;
+    num1 = num2;
+    num2 = temp;
+
+    // print the numbers
+    std::cout &lt;&lt; &quot;Num 1 : &quot; &lt;&lt; num1 &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;Num 2 : &quot; &lt;&lt; num2 &lt;&lt; std::endl;
+
+    return 0;
+}
+</code></pre>
+
+<h2 id="write-a-program-to-calculate-area-and-perimeter-of-a-rectangle">Write a program to calculate area and perimeter of a rectangle.</h2>
+<pre><code class="cpp">#include &lt;iostream&gt;
+
+int main(int argc, const char ** argv){
+    // create two numbers.
+    int length = 20;
+    int breadth = 10;
+
+    // print length of rectangle
+    std::cout &lt;&lt; &quot;Length of rectangle: &quot; &lt;&lt; length &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;Breadth of rectangle: &quot; &lt;&lt; breadth &lt;&lt; std::endl;
+
+    // perimeter of rectangle.
+    std::cout &lt;&lt; &quot;Perimeter of rectangle: &quot; &lt;&lt; 2 * (length + breadth) &lt;&lt; std::endl;
+
+    // area of rectangle
+    std::cout &lt;&lt; &quot;Area of rectangle: &quot; &lt;&lt; length * breadth &lt;&lt; std::endl;
+
+    return 0;
+}
+</code></pre>
+
+<h2 id="write-a-program-to-calculate-total-and-average-of-n-numbers">Write a program to calculate total and average of n numbers.</h2>
+<pre><code class="cpp">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main(int argc, const char ** argv){
+    // store the total and average
+    std::vector&lt;int&gt; nums;
+
+    while(1){
+        int num = 0;
+
+        // ask user to enter a number
+        std::cout &lt;&lt; &quot;Enter -1 to exit or Enter a number: &quot;;
+        std::cin &gt;&gt; num;
+
+        if(num == -1){
+            break;
+        }
+
+        // add the no to vector
+        nums.push_back(num);
+    }
+
+    // find length of nums
+    int len = sizeof(nums) / sizeof(*nums);
+
+    // find the sum
+    int total = 0;
+    for(int i=0; i &lt; len; ++i){
+        total += nums[i];
+    }
+
+    // print the sum and average
+    std::cout &lt;&lt; &quot;Sum of nums are: &quot; &lt;&lt; total &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;Average of nums are: &quot; &lt;&lt; total / len &lt;&lt; std::endl;
+
+    return 0;
+}
+</code></pre>
+
+<h2 id="write-a-program-to-check-whether-a-number-is-positive-or-negative">Write a program to check whether a number is positive or negative</h2>
+<pre><code class="cpp">#include &lt;iostream&gt;
+
+int main(int argc, const char ** argv){
+    // ask user to enter a number.
+    int num = 0;
+
+    std::cout &lt;&lt; &quot;Enter a number: &quot;;
+    std::cin &gt;&gt; num;
+
+    // check if a number is negative
+    if(num &lt; 0)
+        std::cout &lt;&lt; &quot;Number is negative.&quot; &lt;&lt; std::endl;
+    else if(num == 0)
+        std::cout &lt;&lt; &quot;Number is zero or an invalid entry.&quot; &lt;&lt; std::endl;
+    else
+        std::cout &lt;&lt; &quot;Number is positive.&quot; &lt;&lt; std::endl;
+
+    return 0;
+}
+</code></pre>
+
+<h2 id="write-a-program-to-swap-two-variables-without-using-third-variable">Write a program to swap two variables without using third variable</h2>
+<pre><code class="cpp">#include &lt;iostream&gt;
+
+int main(int argc, char **argv){
+    // ask user for a number
+    int num1 = 0;
+    int num2 = 0;
+
+    std::cout &lt;&lt; &quot;Enter first number: &quot;;
+    std::cin &gt;&gt; num1;
+
+    std::cout &lt;&lt; &quot;Enter second number: &quot;;
+    std::cin &gt;&gt; num2;
+
+    // swapping the variables
+    num2 = num1 + num2;
+    num1 = num2 - num1;
+    num2 = num2 - num1;
+
+    std::cout &lt;&lt; &quot;Number 1 : &quot; &lt;&lt; num1 &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;Number 2 : &quot; &lt;&lt; num2 &lt;&lt; std::endl;
+
+    return 0;
+}
+</code></pre>
                 
                   
                 
@@ -1083,6 +1296,20 @@ int main(int argc, const char **argv){
             </div>
           </a>
         
+        
+          <a href="../lesson-02/" title="02. Conditionals, Arrays, Vectors, Strings, Loops" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                02. Conditionals, Arrays, Vectors, Strings, Loops
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
