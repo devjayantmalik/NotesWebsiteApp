@@ -3,34 +3,40 @@ site_name: Jayant's Academy
 nav:
   - Home: index.md
   - About: about.md
-  - 'Programming in C':
-      - '01. Introduction': 'c/01-intro.md'
-      - '02. History and First Program': 'c/02-history-and-first-program.md'
-      - '03. Printing': 'c/03-printing-on-screen.md'
-      - '04. Variables': 'c/04-variables.md'
-      - '05. More on Variables': 'c/05-more-on-variables.md'
-      - '06. Operators': 'c/06-operators.md'
-      - '07. More on Operators': 'c/07-more-on-operators.md'
-      - '08. Arrays': 'c/08-arrays.md'
-      - '09. Control Statements': 'c/09-control-statements.md'
-      - '10. More on Control Statements': 'c/10-more-on-control-structures.md'
-      - '11. Functions': 'c/11-functions.md'
-      - '12. Pointers': 'c/12-pointers.md'
-      - '13. More on Functions': 'c/13-more-on-functions.md'
-      - '14. Preprocessor Directives': 'c/14-preprocessor-directives.md'
-      - '15. More on Preprocessor': 'c/15-more-on-preprocessor.md'
-      - '16. Built in Functions': 'c/16-built-in-functions.md'
-      - '17. Reference Guide': 'c/17-reference-guide.md'
-      - '18. Functions with Pointers': 'c/18-functions-with-pointers.md'
-      - '19. Built in Char Functions': 'c/19-built-in-char-functions.md'
-      - '20. Structures': 'c/20-structures.md'
-      - '21. File Handling': 'c/21-file-handling.md'
-      - '22. Interesting Facts': 'c/22-interesting-facts.md'
-  - 'Data Structures':
-        - '01. Introduction': 'dsa/01-introduction.md'
-        - '02. OS Stack': 'dsa/02-os-stack.md'
-  - 'Python':
-      - '01. Introduction': 'python/01-intro.md'
+  - "Programming in C":
+      - "01. Introduction": "c/01-intro.md"
+      - "02. History and First Program": "c/02-history-and-first-program.md"
+      - "03. Printing": "c/03-printing-on-screen.md"
+      - "04. Variables": "c/04-variables.md"
+      - "05. More on Variables": "c/05-more-on-variables.md"
+      - "06. Operators": "c/06-operators.md"
+      - "07. More on Operators": "c/07-more-on-operators.md"
+      - "08. Arrays": "c/08-arrays.md"
+      - "09. Control Statements": "c/09-control-statements.md"
+      - "10. More on Control Statements": "c/10-more-on-control-structures.md"
+      - "11. Functions": "c/11-functions.md"
+      - "12. Pointers": "c/12-pointers.md"
+      - "13. More on Functions": "c/13-more-on-functions.md"
+      - "14. Preprocessor Directives": "c/14-preprocessor-directives.md"
+      - "15. More on Preprocessor": "c/15-more-on-preprocessor.md"
+      - "16. Built in Functions": "c/16-built-in-functions.md"
+      - "17. Reference Guide": "c/17-reference-guide.md"
+      - "18. Functions with Pointers": "c/18-functions-with-pointers.md"
+      - "19. Built in Char Functions": "c/19-built-in-char-functions.md"
+      - "20. Structures": "c/20-structures.md"
+      - "21. File Handling": "c/21-file-handling.md"
+      - "22. Interesting Facts": "c/22-interesting-facts.md"
+  - "Data Structures":
+      - "01. Introduction": "dsa/01-introduction.md"
+      - "02. OS Stack": "dsa/02-os-stack.md"
+  - "C Plus Plus":
+      - "01. Basics": "cpp/lesson-01.md"
+      - "02. Conditionals, Arrays, Vectors, Strings, Loops": "cpp/lesson-02.md"
+      - "03. Vectors, Loops, Functions, Pointers, Arrays": "cpp/lesson-03.md"
+      - "04. While, Do..while, Exception Handling": "cpp/lesson-04.md"
+      - "05. Math and String Functions": "cpp/lesson-05.md"
+  - "Projects":
+      - "01. Project 1": "projects/project1.md"
 
 theme:
-  name: 'material'
+  name: "material"
